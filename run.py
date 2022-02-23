@@ -18,7 +18,7 @@ def main(inp_folder, out_folder, rep_file):
 
 
 def execute_notebook(input_file, output_file):
-    msg = {"Status": "Ok"}
+    msg = {"Status": "Success"}
     try:
         pm.execute_notebook(input_file, output_file)
     except pm.exceptions.PapermillExecutionError as err:
